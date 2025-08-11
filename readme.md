@@ -12,6 +12,10 @@ de automaçao para sites são personalizados ou correspondem as estruturas do si
 com isto se testar o mesmo script em sites diferentes podem apresentar comportamentos
 inesperados.
 
+No Diretorio: Projectos_extras teram scripts extras: para criação de arquivos, 
+listas diretorios... Serão desenvolvidos a medida que eu estiver a avançar nesta
+jornada
+
 Este repositório documenta meu progresso no estudo de **Python** aplicado:
  **automação**, **web**, **segurança** e **data science**.
 
