@@ -1,6 +1,16 @@
 # Jornada de Aprendizado em Python
 
 		>_Daemon_akalenga
+Usarei constantemente o modulu sys para capturar argumentos, e todos os arquivos foram
+testados em ambiente debian alguns via ssh, com execeção dos scripts que necessitam de
+ambiente grafícos como pyautogui, o por exigência de segunrança do Debian em um 
+ambiente virtual. Leve isso em conta se vir a testar algum destes script.
+
+Para os script que usam o modulo silenium deixar no interior do codigo
+os link dos sites onde foram testados os script, tecnicamente os script de 
+de automaçao para sites são personalizados ou correspondem as estruturas do site alvo,
+com isto se testar o mesmo script em sites diferentes podem apresentar comportamentos
+inesperados.
 
 Este repositório documenta meu progresso no estudo de **Python** aplicado:
  **automação**, **web**, **segurança** e **data science**.
