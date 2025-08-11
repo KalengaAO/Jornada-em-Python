@@ -18,7 +18,7 @@ def	capturar_titulo(url):
 
 		driver = webdriver.Chrome(options=opt)
 		driver.get(url)
-		print (f"O titulo do site aberdo no modo headless: {driver.title}")
+		print (f"O titulo do site aberto no modo headless: {driver.title}")
 
 	except WebDriverException as e:
 		print (f"Error ao inicializar o navegador")
