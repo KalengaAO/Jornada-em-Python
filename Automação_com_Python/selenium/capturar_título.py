@@ -1,25 +1,38 @@
 #!/usr/bin/env python3
 
 from selenium import webdriver
-from selenium.commom.by import By
+from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.commom.exception import WebDriverExeception
-from selenium.webdriver.commom.ui import WebDriverWait
-from 
+from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.support.ui import WebDriverWait
+import sys
 
-def	capturar_titulo(url)
-try:
+def	capturar_titulo(url):
+	while True:
+		if not url.endswith(".com"):
+			print ("Entre com uma url valida (ex: https//:example.com)")
+			url = str(input("ur: "))
+		else:
+			break
+	try:
 
-	options = Option()
-	options.add_argument(--headless)
-	driver = webdriver.Chrome(option=options)
+		options = Options()
+		options.add_argument("--headless")
+		driver = webdriver.Chrome(option=options)
 
-	WebDriverWait(driver, 5)
-	drive.get(url)
-	print (f"Título da página: {driver.title}")
+		WebDriverWait(driver, 5)
+		drive.get(url)
+		print (f"Título da página: {driver.title}")
 	
-except WEbDriverException as e:
-	print (f"Erro ao iniciar o navegador")
+	except WebDriverException as e:
+		print (f"Erro ao iniciar o navegador")
 
-finally:
-	driver.quit()
+	finally:
+		driver.quit()
+
+if __name__ == "__main__":
+	if len(sys.argv) == 2:
+		capturar_titulo(sys.argv[1])
+	else:
+		print ("Uso: python3 script.py <url>")
+		sys.exit(1)
