@@ -1,5 +1,7 @@
 # Jornada de Aprendizado em Python
 
+		>_Daemon_akalenga
+
 Este repositório documenta meu progresso no estudo de **Python** aplicado:
  **automação**, **web**, **segurança** e **data science**.
 
