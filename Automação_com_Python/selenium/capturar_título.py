@@ -1,38 +1,35 @@
 #!/usr/bin/env python3
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import WebDriverException
-from selenium.webdriver.support.ui import WebDriverWait
 import sys
 
 def	capturar_titulo(url):
 	while True:
 		if not url.endswith(".com"):
-			print ("Entre com uma url valida (ex: https//:example.com)")
-			url = str(input("ur: "))
+			url = str(input("Entre com uma url valida: \
+(ex: https://example.com)\nUrl: ")).lower().strip()
 		else:
 			break
 	try:
+		opt = Options()
+		opt.add_argument("--headless=new")
 
-		options = Options()
-		options.add_argument("--headless")
-		driver = webdriver.Chrome(option=options)
+		driver = webdriver.Chrome(options=opt)
+		driver.get(url)
+		print (f"O titulo do site aberdo no modo headless: {driver.title}")
 
-		WebDriverWait(driver, 5)
-		drive.get(url)
-		print (f"Título da página: {driver.title}")
-	
 	except WebDriverException as e:
-		print (f"Erro ao iniciar o navegador")
+		print (f"Error ao inicializar o navegador")
 
 	finally:
-		driver.quit()
+		if driver:
+			driver.quit()
 
 if __name__ == "__main__":
+
 	if len(sys.argv) == 2:
 		capturar_titulo(sys.argv[1])
 	else:
 		print ("Uso: python3 script.py <url>")
-		sys.exit(1)
