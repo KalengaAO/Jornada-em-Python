@@ -5,7 +5,7 @@ entrada = str(input("Digite o caminho da pasta: ")).lower().strip()
 
 base = Path(entrada).expanduser()
 
-if not base.exists():
+if not base.exists() or not base.is_dir():
 	print("Caminho inválido!")
 	sys.exit(0)
 
