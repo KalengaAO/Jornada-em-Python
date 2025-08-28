@@ -10,19 +10,19 @@ while (1):
 	if process == 1:
 		tarefa = str(input("Digite a nova tarefa: "))
 		lista_tarefa.append(tarefa)
-	if process == 2:
+	elif process == 2:
 		tarefa = int(input("Digite o nome da tarefa a remover: "))
 		lista_tarefa.remove(tarefa)
-	if process == 3:
+	elif process == 3:
 		for i, tarefa in enumerate(lista_tarefa):
 			print(f"{i + 1}-", tarefa)
-	if process == 4:
+	elif process == 4:
 		tarefa = str(input("Digite o nome da tarefa: "))
 		if tarefa in lista_tarefa:
 			print (f"1- ", lista_tarefa[lista_tarefa.index(tarefa)])
 		else:
 			print (f"A tarefa '{str(tarefa)}' não consta na lista de tarefa: ")
-	if process == 5:
+	elif process == 5:
 		print("Good bay your manager homework!")
 		sys.exit(0)
 	
