@@ -4,8 +4,6 @@ import sys
 entrada = str(input("Digite o caminho da pasta: ")).lower().strip()
 
 base = Path(entrada).expanduser()
-arquivos = []
-pasta = []
 
 if not base.exists():
 	print("Caminho inválido!")
