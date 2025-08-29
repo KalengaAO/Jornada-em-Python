@@ -18,9 +18,12 @@ with open(arquivo, mode='r', newline='', encoding='utf-8') as filein:
 	reader = csv.DictReader(filein)
 	campo = str(input("Digite o campo a ser filtrado: ")).strip().lower()
 	sem_dupli = set()
-	for alunos in reader:
-		sem_dupli.add(alunos[campo].lower())
-	print(sem_dupli)
+	try:
+		for alunos in reader:
+			sem_dupli.add(alunos[campo].lower())
+		print(sem_dupli)
+	except IndexError as erro:
+		print ("Index invaido")
 	filtro = str(input(f"Digite o {campo} a ser filtrado: ")).strip().lower()
 
 """O script esta meio com instruções repetidas"""
