@@ -13,7 +13,7 @@ else:
 	print("Arquivo inexistente:")
 	sys.exit(1)
 alunos_filtrado = []
-print("CAMPOS: nome\nidade\ncurso\email")
+print("CAMPOS: nome\tidade\tcurso\temail")
 with open(arquivo, mode='r', newline='', encoding='utf-8') as filein:
 	reader = csv.DictReader(filein)
 	filtro = str(input("Digite o campo a ser filtrado: ")).strip().lower()
@@ -21,6 +21,9 @@ with open(arquivo, mode='r', newline='', encoding='utf-8') as filein:
 		if alunos['curso'].lower() == filtro:
 			alunos_filtrado.append(alunos)
 
-
-for curso in alunos_filtrado:
-	print(curso)
+with open("filtro.csv", mode='w', newline='', encoding='utf-8') as fileout:
+	colunas = ['nome', 'idade', 'curso', 'email']
+	writer = csv.DictWriter(fileout, fieldnames=colunas)
+	writer.writeheader()
+	writer.writerows(alunos_filtrado)
+	print (f"Arquivo com filtro criado em: {Path.cwd()}")
