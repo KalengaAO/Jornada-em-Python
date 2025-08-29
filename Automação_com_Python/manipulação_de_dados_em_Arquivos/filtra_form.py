@@ -21,7 +21,7 @@ print(f"Escolha o formato do arquivo {saida}")
 print(f"{formato}")
 
 while True:
-	form = input("(ex: .log): ").strip().lower()
+	form = input("(ex: log): ").strip().lower()
 	if form in formato:
 		break
 
