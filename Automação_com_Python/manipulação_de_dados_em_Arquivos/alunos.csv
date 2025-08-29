@@ -1,4 +1,51 @@
-nome,idade,curso
-António,24,Python
-Maria,30,JavaScript
-João,28,Data Science
+nome,idade,curso,email
+António,19,Go,antónio@email.com
+Maria,24,Go,maria@email.com
+João,20,Ruby,joão@email.com
+Ana,18,PHP,ana@email.com
+Paulo,27,Ruby,paulo@email.com
+Carla,18,PHP,carla@email.com
+Miguel,35,Python,miguel@email.com
+Rita,26,PHP,rita@email.com
+Pedro,31,Java,pedro@email.com
+Sofia,27,Python,sofia@email.com
+Luís,32,Data Science,luís@email.com
+Mariana,35,Python,mariana@email.com
+José,31,Java,josé@email.com
+Beatriz,25,PHP,beatriz@email.com
+André,20,Ruby,andré@email.com
+Cláudia,32,Go,cláudia@email.com
+Bruno,27,Python,bruno@email.com
+Helena,23,Python,helena@email.com
+Tiago,19,Data Science,tiago@email.com
+Marta,24,JavaScript,marta@email.com
+Ricardo,31,Go,ricardo@email.com
+Patrícia,35,Data Science,patrícia@email.com
+Fábio,34,JavaScript,fábio@email.com
+Isabel,18,Rust,isabel@email.com
+Manuel,28,Ruby,manuel@email.com
+Carolina,31,Go,carolina@email.com
+Gonçalo,32,JavaScript,gonçalo@email.com
+Inês,29,Java,inês@email.com
+Alexandre,25,Go,alexandre@email.com
+Teresa,32,PHP,teresa@email.com
+Hugo,27,Python,hugo@email.com
+Diana,35,Ruby,diana@email.com
+Daniel,29,JavaScript,daniel@email.com
+Raquel,27,C,raquel@email.com
+Vítor,30,PHP,vítor@email.com
+Laura,30,Java,laura@email.com
+César,28,Ruby,césar@email.com
+Joana,34,PHP,joana@email.com
+Eduardo,35,Ruby,eduardo@email.com
+Filipa,30,Ruby,filipa@email.com
+Rafael,24,C++,rafael@email.com
+Camila,21,Data Science,camila@email.com
+Nuno,24,JavaScript,nuno@email.com
+Liliana,33,Go,liliana@email.com
+Fernando,35,PHP,fernando@email.com
+Cátia,24,Java,cátia@email.com
+Rui,24,Ruby,rui@email.com
+Vanessa,23,C++,vanessa@email.com
+Nelson,31,Java,nelson@email.com
+Luciana,26,PHP,luciana@email.com
