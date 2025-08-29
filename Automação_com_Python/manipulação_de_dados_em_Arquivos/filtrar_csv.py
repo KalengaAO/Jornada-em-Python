@@ -23,10 +23,8 @@ with open(arquivo, mode='r', newline='', encoding='utf-8') as filein:
 	print(sem_dupli)
 	filtro = str(input(f"Digite o {campo} a ser filtrado: ")).strip().lower()
 
-
 """O script esta meio com instruções repetidas"""
 """para fins didaticos """
-
 
 with open(arquivo, mode='r', newline='', encoding='utf-8') as file:
 	reader = csv.DictReader(file)
