@@ -17,7 +17,7 @@ listas diretorios... Serão desenvolvidos a medida que eu estiver a avançar nes
 jornada
 
 Este repositório documenta meu progresso no estudo de **Python** aplicado:
- **automação**, **web**, **segurança** e **data science**.
+ **automação**, **web**, **segurança**.
 
 ---
 
@@ -49,12 +49,3 @@ Este repositório documenta meu progresso no estudo de **Python** aplicado:
 - Fundamentos de redes, sockets, sniffing de pacotes.
 - SSH automatizado, testes de penetração simulados.
 - Monitoramento e defesa.
-
----
-
-## Data Science com Python
-- Pandas, estatística, limpeza de dados.
-- Visualização com Matplotlib e Seaborn.
-- Numpy para cálculo vetorial.
-- Agrupamento, machine learning básico.
-
