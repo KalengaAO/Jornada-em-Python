@@ -17,7 +17,10 @@ def api_inf():
 
 @app.errorhandler(404)
 def paginanotfound(error):
-	return f"<h1>Pagina não encontrada {error}</h1>"
+	return '''
+		<h2 style="color:red">Esta pagina não existe!</h2>
+		<a href="/api.info">Retonar</a>
+	'''
 
 if __name__ == "__main__":
 	app.run(debug=True)
