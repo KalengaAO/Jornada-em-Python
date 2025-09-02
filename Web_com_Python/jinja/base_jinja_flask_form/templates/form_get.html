@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Jinja2 com template</title>
+    </head>
+    <body>
+        <form method="get">
+            <label>Nome:</label>
+                <input type="text" name="nome">
+                <button type="submit">Enviar</button>
+        </form>
+        {%if nome%}
+            <p>Olá, {{nome}}!</p>
+        {%endif%}
+    </body>
+</html>

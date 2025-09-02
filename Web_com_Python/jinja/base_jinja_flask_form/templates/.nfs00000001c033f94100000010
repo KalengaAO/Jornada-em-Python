@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>test jinja2</title>
+    </head>
+    <body>
+        <ol>Lista numerica</ol>
+            {%for it in range(10)%}
+                <li>{{ it }}</li>
+            {%endfor%}
+    </body>
+</html>
