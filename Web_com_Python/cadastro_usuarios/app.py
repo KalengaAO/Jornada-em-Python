@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 
 from flask import Flask, jsonify
-import routes
+import routas
 
 app = Flask(__name__)
-app.register_blueprint(routes.bp)
+app.register_blueprint(routas.bp)
 
 @app.errorhandler(404)
-def pagina_not_found(error):
-	return jsonify({"Erro": "Endpoint não encontrado!"}), 404
+def pagin_not_found(error):
+	return jsonify({"erro": "rota não encontrada: {error}!"})
 
 @app.errorhandler(500)
 def erro_interno(error):
-	return jsonify({"erro": "Erro interno no servidor"}), 500
+	return jsonify({"erro": "erro interno do servidor: {error}!"})
 
 if __name__ == "__main__":
 	app.run(debug=True)
