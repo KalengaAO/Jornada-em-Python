@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <h1>Olá, {{user}} </h1>
+    <h2>Suas tarefas</h2>
+  <ul>
+        {% for tf in tarefa %}
+    <li>
+        {{ tf.titulo }}
+        {% if tf.feito %}
+            (concluido)
+        {% else %}
+            (pendente)
+        {% endif %}
+    </li>
+    {%endfor%}
+  </ul>
+</body>
+
+</html>
