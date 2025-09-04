@@ -4,7 +4,7 @@ No Diretorio: Projectos_extras teram scripts extras e arquivos extras: para cria
 listas diretorios... Serão desenvolvidos a medida que eu estiver a avançar nesta
 jornada
 
-Este repositório documenta meu progresso no estudo de **Python** aplicado:
+Este repositório documenta meu progresso no estudo das bases em **Python** aplicado:
  **automação**, **web**, **segurança**.
 
 ---
