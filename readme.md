@@ -1,6 +1,6 @@
 # Jornada de Aprendizado em Python
 
-No Diretorio: Projectos_extras teram scripts extras: para criação de arquivos, 
+No Diretorio: Projectos_extras teram scripts extras e arquivos extras: para criação de arquivos, 
 listas diretorios... Serão desenvolvidos a medida que eu estiver a avançar nesta
 jornada
 
