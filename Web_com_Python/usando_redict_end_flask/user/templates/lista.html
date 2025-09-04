@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+</head>
+<body>
+    <h2>Usuários Cadastrados</h2>
+    <ul>
+        {% for u in users %}
+            <li>{{ u.nome }} ({{ u.email }}, {{ u.idade }} anos)</li>
+        {% else %}
+            <li>Nenhum usuário cadastrado ainda.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('user.cadastro') }}">Voltar ao cadastro</a>
+</body>
+</html>
