@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "nome": "António",
+        "email": "antonio@gmail.com",
+        "idade": "25",
+        "tel": "952132159",
+        "morada": "Luanda"
+    },
+    {
+        "id": 1,
+        "nome": "ruck",
+        "email": "sensitiveolympie@powerscrews.com",
+        "idade": "26",
+        "tel": "9477110089",
+        "morada": "Viana"
+    },
+    [
+        {
+            "id": 1,
+            "nome": "António",
+            "email": "antonio@gmail.com",
+            "idade": "25",
+            "tel": "952132159",
+            "morada": "Luanda"
+        },
+        {
+            "id": 1,
+            "nome": "ruck",
+            "email": "sensitiveolympie@powerscrews.com",
+            "idade": "26",
+            "tel": "9477110089",
+            "morada": "Viana"
+        }
+    ]
+]

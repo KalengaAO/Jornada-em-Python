@@ -2,7 +2,7 @@
 
 No Diretorio: Projectos_extras teram scripts extras e arquivos extras: para criação de arquivos, 
 listas diretorios... Serão desenvolvidos a medida que eu estiver a avançar nesta
-jornada
+jornada, não liga a bagunça dentro dos directorio, após terminar, darei um jeito de organizar.
 
 Este repositório documenta meu progresso no estudo das bases em **Python** aplicado:
  **automação**, **web**, **segurança**.
@@ -29,7 +29,7 @@ Este repositório documenta meu progresso no estudo das bases em **Python** apli
 
 ## Web com Python
 - **Flask** – Servidor básico, APIs, templates e formulários.
-- **Django** – Estrutura, admin, views, URLs, banco de dados.
+- **Django** – Estrutura, admin, views, URLs, banco de dados. Baseado na documentação
 
 ---
 

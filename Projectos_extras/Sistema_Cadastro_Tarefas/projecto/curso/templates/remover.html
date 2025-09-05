@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Remover cadastro</title>
+    </head>
+    <body>
+        <h1 style="color:gree" >Remover cadastro por id</h1>
+        <form method="DELETE">
+            <label>Id:</label>
+            <input type="number" placeholder="id" name="id" autofocus>
+            <button type="submit">Remover</button>
+        </form>
+        {% if not user%}
+            {%  with msg = get_flashed_messages(with_categories=True)%}
+            {% if msg %}
+                {% for categoria, info in msg %}
+                    <p style="color: green;">{{ info }}</p>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+        {% endif %}
+    </body>
+</html>

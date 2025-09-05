@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>lista de cadastro</title>
+</head>
+
+<body>
+    <h1>Lista de cadastro</h1>
+    {% if not cadastro %}
+        {% with mensagen = get_flashed_messages(with_categories=true) %}
+            {% if mensagen %}
+                {% for categoria, msg in mensagen %}
+                    <p style="color:green;">{{ msg }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    {% endif %}
+    {% if cadastro %}
+    <ol>
+        <p><b>N⁰Nome Email idade Morada</b></p>
+        {% for user in cadastro %}
+        <li>
+            {{ user.nome }}
+            {{ user.email }}     
+            {{ user.idade }}     
+            {{ user.morada }}
+        </li>
+        {% endfor %}
+    </ol>
+    {% endif %}
+    <a href="/">
+        <button type="button">Voltar</button>
+    </a>
+</body>
+
+</html>
