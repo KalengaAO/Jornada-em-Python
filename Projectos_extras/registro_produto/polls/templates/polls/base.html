@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %} registro de produtos {% endblock %}
+    </title>
+</head>
+<body>
+    <head>
+        <h1>Meus Produtos</h1>
+        <nav>
+            <a href="{% urls 'polls:index' %}">Home</a>
+        </nav>
+    </head>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Registro de Produtos</p>
+    </footer>
+</body>
+</html>
