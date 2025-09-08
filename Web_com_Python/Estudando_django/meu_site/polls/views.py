@@ -7,8 +7,8 @@ def index(request):
 	lista_contacto = []
 	produto = Produto.objects.all()
 	contact = Contacto.objects.all()
-	for p in produto:
-		lista_produto.append({"nome": p.nome, "preco": p.preco})
-	for c in contact:
-		lista_contacto.append({"nome": c.nome, "morada": c.morada, "telefone": c.tel})
-	return HttpResponse(f"Produtos disponíveis: {lista_produto}\n {lista_contacto}")
+	return render(request,"polls/index.html", {"produto": produto, "contacto": contact})
+
+def produto_detail(request, pk):
+	produto = get_object_or_404(Produto, pk=pk)
+	return render(request, "polls/detail.html", {"produto": produto})

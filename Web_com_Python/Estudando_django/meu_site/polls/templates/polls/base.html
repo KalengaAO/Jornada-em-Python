@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Jornada em python{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header,
+        nav,
+        footer {
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site de Produtos</h1>
+    </header>
+
+    <nav>
+        <a href="{% url 'polls:index' %}">Home</a>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Site</p>
+    </footer>
+</body>
+
+</html>

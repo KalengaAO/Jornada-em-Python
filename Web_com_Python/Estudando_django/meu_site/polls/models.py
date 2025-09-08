@@ -10,7 +10,7 @@ class Produto(models.Model):
 class Contacto(models.Model):
 	nome = models.CharField(max_length=100)
 	morada = models.CharField(max_length=200)
-	tel = models.DecimalField(max_digits=12, decimal_places=2)
+	tel = models.IntegerField()
 
 	def __str__(self):
 		return f"{self.nome} - {self.morada} - {self.tel}"
