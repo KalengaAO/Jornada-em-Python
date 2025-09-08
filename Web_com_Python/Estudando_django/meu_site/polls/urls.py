@@ -7,5 +7,5 @@ app_name = "polls"
 
 urlpatterns = [
 	path("", views.index, name="index"),
-	path("produto/<int:pk>/", views.produto_detail, name="produto_detail")
+	path("produto/<int:pk>/", views.detail, name="detail")
 ]

@@ -1,0 +1,8 @@
+{% extends "polls/base.html" %}
+{% block title %}{{ produto.nome }} - Detalhe{% endblock %}
+
+{% block content %}
+<h2>{{ produto.nome }}</h2>
+<p>Preço: {{ produto.preco }} kz</p>
+<p><a href="{% url 'polls:index' %}">Voltar lista</a> </p>
+{% endblock %}

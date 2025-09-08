@@ -3,14 +3,16 @@
 {% block title %}Lista de Produtos{% endblock %}
 
 {% block content %}
-  <h2>Produtos Disponíveis</h2>
-  <ul>
-    {% for p in produto %}
-      <li>
-          {{ p.nome }} — {{ p.preco }} Kz
-      </li>
-    {% empty %}
-      <li>Nenhum produto disponível.</li>
-    {% endfor %}
-  </ul>
+<h2>Produtos Disponíveis</h2>
+<ul>
+  {% for p in produto %}
+  <li>
+    <a href="{% url 'polls:detail' p.id %}">
+      {{ p.nome }} — {{ p.preco }} Kz
+    </a>
+  </li>
+  {% empty %}
+  <li>Nenhum produto disponível.</li>
+  {% endfor %}
+</ul>
 {% endblock %}
