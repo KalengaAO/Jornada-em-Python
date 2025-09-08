@@ -4,6 +4,9 @@
 
 {% block content %}
 <h2>Produtos Disponíveis</h2>
+<p><a href="{% url 'polls:adicionar_produto' %}" >Adicionar produto</a></p>
+
+{% if produto %}
 <ul>
   {% for p in produto %}
   <li>
@@ -15,4 +18,5 @@
   <li>Nenhum produto disponível.</li>
   {% endfor %}
 </ul>
+{% endif %}
 {% endblock %}

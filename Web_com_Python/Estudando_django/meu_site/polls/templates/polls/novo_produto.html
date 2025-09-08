@@ -3,11 +3,11 @@
 {% block title %}Novo Produto{% endblock %}
 
 {% block content %}
-    <h2>Criar novo produto</h2>
+    <h2>Cadastrar produto</h2>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Salvar</button>
     </form>
-    <p><a heref="{% url 'polls:index' %}"></a>Voltar a lista</p>
+    <p><a href="{% url 'polls:index' %}">Voltar</a></p>
 {%endblock%}
