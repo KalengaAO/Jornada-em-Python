@@ -6,20 +6,35 @@
     <title>
         {% block title %} registro de produtos {% endblock %}
     </title>
+    <style>
+        body{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, nav, footer{
+            padding: 10;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        nav, a{
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <head>
+    <header>
         <h1>Meus Produtos</h1>
-        <nav>
-            <a href="{% urls 'polls:index' %}">Home</a>
+    </header>
+       <nav>
+            <a href="{% url 'polls:index' %}">Home</a>
         </nav>
-    </head>
     <main>
         {% block content %}
         {% endblock %}
     </main>
     <footer>
-        <p>&copy; 2025 Registro de Produtos</p>
+        <small><p>&copy; 2025 Registro de Produtos</p></small>  
     </footer>
 </body>
 </html>

@@ -1,17 +1,21 @@
 {% extends "polls/base.html" %}
 
 {% block title %}Lista de produtos{% endblock %}
-<h1>Lista de produtos</h1>
+
 {% block content %}
+<h2>Lista de produtos</h2>
+  <p><a href="{% url 'polls:adicionar_produto' %}">Adicionar produto</a></p>
 {% if produto %}
 <ul>
     {% for p in produto %}
     <li>
-        {% p.nome %} : {% p.preco %}
+        <a href="{% url 'polls:detail'  p.pk %}">
+            {{ p.nome }} : {{ p.preco }} kz
+        </a>
     </li>
     {% endfor %}
 </ul>
 {% else %}
-    <p>Nenhum produto registrado</p>
+<p>Nenhum produto registrado</p>
 {% endif %}
 {% endblock %}
