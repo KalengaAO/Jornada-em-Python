@@ -16,4 +16,7 @@ class Subtema(models.Model):
 		verbose_name_plural = "SubTema"
 
 	def __str__(self):
-		return f"{self.topico} : {self.subtema[:20]}... :{self.data}"
+		if len(self.subtema) > 10:
+			return f"{self.topico} : {self.subtema[:15]}.. / {self.data}"
+		else:
+			return f"{self.topico} : {self.subtema[:15]} / {self.data}"
