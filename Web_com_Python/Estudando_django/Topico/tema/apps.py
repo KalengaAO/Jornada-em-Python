@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TopicConfig(AppConfig):
+class TemaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'topic'
+    name = 'tema'
