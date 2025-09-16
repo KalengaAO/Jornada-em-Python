@@ -5,7 +5,7 @@ class Tema(models.Model):
 	data = models.DateTimeField(auto_now_add=True)
 
 	def __str__(self):
-		return f"{self.topico} :  {self.data}"
+		return f"{self.topico}"
 
 class Subtema(models.Model):
 	topico = models.ForeignKey(Tema, on_delete=models.CASCADE)
@@ -17,6 +17,6 @@ class Subtema(models.Model):
 
 	def __str__(self):
 		if len(self.subtema) > 10:
-			return f"{self.topico} : {self.subtema[:15]}.. / {self.data}"
+			return f"{self.topico} : {self.subtema[:15]}.."
 		else:
-			return f"{self.topico} : {self.subtema[:15]} / {self.data}"
+			return f"{self.topico} : {self.subtema[:15]}"

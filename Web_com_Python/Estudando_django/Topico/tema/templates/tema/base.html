@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block titulo %} base {% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <h1>{% block head %} base {% endblock %}</h1>
+    </header>
+    <nav>
+        <a href="{% url 'tema:index' %}">index</a>
+    </nav>
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+
+</html>
