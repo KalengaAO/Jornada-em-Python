@@ -1,0 +1,11 @@
+{% extends "tema/base.html" %}
+
+{% block titulo %}Subtema{% endblock %}
+{% block conteudo %}
+<p>{{ tema.topico }}</p>
+<form   action="{% url 'tema:subtema' tema.id %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "tema/base.html" %}
+{% block conteudo %}
+<ul>
+    {% for ls in lista %}
+        <li>{{ ls.topico }}</li>
+    {% empty %}
+    <p>lista vazia</p>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,12 +1,12 @@
 {% extends "tema/base.html" %}
 {% block titulo %} Temas {% endblock %}
-{% block head %} Temas {% endblock %}
+<h1>Temas</h1>
 {% block conteudo %}
 <h3>Topicos</h3>
 <ul>
     {% for tm in topicos %}
     <li>
-       <b>{{ tm.topico }}</b>  {{ tm.subtema }} <br><i>{{ tm.data }}</i> 
+        <b>{{ tm.topico }}</b><br> {{ tm.subtema }} <br><i>{{ tm.data }}</i>
     </li>
     {% empty %}
     <li>lista de topico esta vazia</li>

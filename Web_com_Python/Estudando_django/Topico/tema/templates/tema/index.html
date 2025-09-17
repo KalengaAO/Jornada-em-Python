@@ -1,6 +1,7 @@
 {% extends "tema/base.html" %}
 {% block titulo %} index {% endblock %}
-{% block head %} index {% endblock %}
 {% block conteudo %}
- <p>Paginas de teste</p>
+<a href="{% url 'tema:form' %}">Criar Topico</a><br>
+<a href="{% url 'tema:lista' %}">Lista de Topicos</a><br>
+<p>Paginas de teste</p>
  {% endblock %}

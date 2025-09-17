@@ -1,0 +1,13 @@
+{% extends "tema/base.html" %}
+
+{% block titulo %} Criar novo topico {% endblock %}
+
+<h1>Criar novo topico</h1>
+
+{% block conteudo %}
+    <form  action="{% url 'tema:form' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+{% endblock %}

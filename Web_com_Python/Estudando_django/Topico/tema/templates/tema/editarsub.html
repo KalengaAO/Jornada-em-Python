@@ -1,0 +1,11 @@
+{% extends "tema/base.html" %}
+
+{% block titulo %} Editar sub {% endblock %}
+<h1>Editar os Subtemas</h1>
+{% block conteudo %}
+<form action="{% url 'tema:editar' sub.id %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}
