@@ -2,7 +2,10 @@
 {% block conteudo %}
 <ul>
     {% for ls in lista %}
-        <li>{{ ls.topico }}</li>
+        <li>
+            {{ ls.topico }}
+            <a href="{% url 'tema:editar' ls.id %}" >Editar</a>
+        </li>
     {% empty %}
     <p>lista vazia</p>
     {% endfor %}

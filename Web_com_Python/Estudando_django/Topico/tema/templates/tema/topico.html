@@ -6,7 +6,8 @@
 <ul>
     {% for tm in topicos %}
     <li>
-        <b>{{ tm.topico }}</b><br> {{ tm.subtema }} <br><i>{{ tm.data }}</i>
+        <b>{{ tm.topico }}</b><br> {{ tm.subtema }} <br><i>{{ tm.data }}</i><br>
+        <a href="{% url 'tema:editar' tm.id %}">Editar...</a><br><br>
     </li>
     {% empty %}
     <li>lista de topico esta vazia</li>
