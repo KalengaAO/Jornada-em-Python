@@ -1,8 +1,2 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
-def	login(request):
-	return render(request, "user/logo.html")
-
-def logout(request):
-	logout(request)
-	return redirect("base:index")
