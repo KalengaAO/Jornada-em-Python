@@ -1,0 +1,11 @@
+{% block titulo %} login {% endblock %}
+{% block conteudo %}
+{% if.errors %}
+<p>nome de usuário e palavra passe invalida: Tente novamente</p>
+<form method="post" action="{% url 'user:login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Log in</button>
+    <input type="hidden" name="next" value="{% url 'user:index' %}">
+</form>
+{% endblock %}
